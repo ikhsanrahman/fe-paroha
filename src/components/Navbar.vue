@@ -46,7 +46,7 @@
               <v-expansion-panel>
                 <v-expansion-panel-header hide-actions @click="profile">Sejarah</v-expansion-panel-header>
                 <v-expansion-panel-header hide-actions @click="profile">Visi Misi</v-expansion-panel-header>
-                <v-expansion-panel-header hide-actions>Tim Kami</v-expansion-panel-header>
+                <v-expansion-panel-header hide-actions @click="team">Tim Kami</v-expansion-panel-header>
                 <v-expansion-panel-header hide-actions>Legalitas</v-expansion-panel-header>
               </v-expansion-panel>
             </v-expansion-panels>
@@ -116,7 +116,10 @@
 			},
 			home () {
 				this.$router.push({name:'home'}).catch(err => {})
-			}
+			},
+      team () {
+        this.$router.push({name:'team'})
+      }
 		}
 	}
 </script>

@@ -25,6 +25,11 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: () => import('@/components/Profile.vue')
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: () => import('@/components/Team.vue')
     }
   ]
 })
