@@ -30,6 +30,11 @@ export default new Router({
       path: '/team',
       name: 'team',
       component: () => import('@/components/Team.vue')
+    },
+    {
+      path: '/produk',
+      name: 'produk',
+      component: () => import('@/components/ProdukJasa.vue')
     }
   ]
 })

@@ -52,7 +52,7 @@
             </v-expansion-panels>
             </v-col>
             <v-col>
-              <v-btn text color="primary">PRODUK & JASA</v-btn>
+              <v-btn text color="primary" @click="produk">PRODUK & JASA</v-btn>
             </v-col>
             <v-col>
               <v-btn text color="primary">REKANAN</v-btn>
@@ -84,7 +84,7 @@
               </v-expansion-panel-content>
            </v-expansion-panel>
            <v-expansion-panel>
-            <v-expansion-panel-header hide-actions>PRODUK & JASA</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="produk">PRODUK & JASA</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions>REKANAN</v-expansion-panel-header>
@@ -119,6 +119,9 @@
 			},
       team () {
         this.$router.push({name:'team'})
+      },
+      produk () {
+        this.$router.push({name:'produk'})
       }
 		}
 	}
