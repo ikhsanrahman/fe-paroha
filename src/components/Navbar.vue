@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<v-container fluid class="transparent" style="background:none;position:fixed;box-shadow:5px 5px 18px #888888">
+		<v-container fluid class="transparent" style="background:none;position:fixed;box-shadow:5px 5px 10px #888888;z-index:99">
       <v-row class="transparent">
         <v-col>
-          <v-row class="mx-auto" justify="start" >
+          <v-row class="" >
             <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
-            <h4 class="mt-10">PT PAROHA TOPAZ SEJAHTERA</h4>
+            <h4 class="mt-10 ml-n4">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
         </v-col>
         <v-col class="d-none d-lg-block">
@@ -67,7 +67,7 @@
         </v-col>
       </v-row>					
 		</v-container>        
-    <v-container fluid style="position:fixed" class="pr-4 mt-10">
+    <v-container fluid style="position:fixed;z-index:99" class="pr-4 mt-10">
       <v-row justify="end">
         <v-app-bar-nav-icon class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">

@@ -1,6 +1,6 @@
 <template>
 	<div>
-	<navbar/>
+	<navbar style="z-index:99"></navbar>
 	<br>
 	<br>
 	<br>
@@ -8,7 +8,7 @@
 	<br>
 	<br>
 	<v-container class="align-center">
-		<v-row justify="center" class="mt-12" style="">
+		<v-row justify="center" class="mt-12">
 			<h1>MEET THE TEAM</h1>
 		</v-row>
 		<v-row no-gutters class="mt-12">
@@ -71,14 +71,14 @@
 				</v-card-text>
 				<div style="background:blue">
 					
-				<v-row style="height:130px;" class="mx-12 mt-12">
-					<v-avatar width="80" height="80" class="mt-n6">
-						<img
-			        :src="item.url"
-			        alt="">
-					</v-avatar>
-					<div class="ml-10 mt-6" style="font-weight:bold">{{item.name}} </div>
-				</v-row>
+					<v-row style="height:130px;" class="mx-12 mt-12">
+						<v-avatar width="80" height="80" class="mt-n6">
+							<img
+				        :src="item.url"
+				        alt="">
+						</v-avatar>
+						<div class="ml-10 mt-6" style="font-weight:bold">{{item.name}} </div>
+					</v-row>
 				</div>
 			</v-card>
 			</v-col>
