@@ -361,7 +361,7 @@ import Background from './Header.vue'
   height: 160px;
   width: 100vw;
   /* background: hsl(155, 31%, 50%); */
-  background: none;
+  background: rgb(233, 230, 230);
   position: fixed;
   box-shadow: 0 2px 15px rgba(71, 120, 120, 0.5);
   transform: translate3d(0, 0, 0);
