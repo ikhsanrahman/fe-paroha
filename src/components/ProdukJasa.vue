@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<navbar/>
+<!-- 		<navbar/>
 		<br>
 		<br>
 		<br>
 		<br>
 		<br>
-		<br>
+		<br> -->
 		<v-container class="mt-12">
 			<v-row>
 				<v-card
@@ -20,7 +20,7 @@
 			      class="mx-auto mt-12"
 			      height="100px"
 			      width="100px"
-			      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
+			      :src="content.url">
 			      <!-- <v-card-title>Top 10 Australian beaches</v-card-title> -->
 			    </v-img>
 			    <br>
@@ -36,17 +36,7 @@
 								<h4>{{add}}</h4>
 							</v-row>
 			      </div>
-
-			      <!-- <div>Whitsunday Island, Whitsunday Islands</div> -->
 			    </v-card-text>
-
-			    <!-- <v-card-actions> -->
-			      <!-- <v-btn
-			        color="orange"
-			        text>
-			        Share
-			      </v-btn> -->
-
 			      <v-btn class="float-right"
 			        color="orange"
 			        text>
@@ -61,11 +51,11 @@
 </template>
 
 <script>
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 	export default {
 		name: 'ProdukJasa',
 		components: {
-			Navbar
+			// Navbar
 		},
 		data () {
 			return {

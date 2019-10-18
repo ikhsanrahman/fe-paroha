@@ -1,12 +1,12 @@
 <template>
 	<div>
-	<navbar/>
+	<!-- <navbar/> -->
+<!-- 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
-	<br>
-	<br>
+	<br> -->
 	<v-container fluid class="profile align-center mt-12">		
 		<v-row no-gutters class="sejarah" >
 			<v-col cols="12" md="8" >
@@ -18,7 +18,7 @@
 			<v-col cols="12" md="3" class="ml-12">
 				<img src="@/assets/Tambun.jpg" height="90%" width="90%" alt="">	
 			</v-col>
-			<v-col cols="10" md="6" class="text">
+			<v-col cols="10" md="6" class="text" :id="sejarah">
 				<h1>SEJARAH</h1>
 				<h3 style="color:red">
 					Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
@@ -37,8 +37,9 @@
 				</p>
 			</v-col>
 		</v-row>
-		<v-row class="visi-misi">
+		<v-row class="visi-misi" :id="visiMisi">
 			<v-col>
+				{{sejarah}}
 				<h2>VISI</h2>
 				<p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
 			</v-col>
@@ -56,12 +57,14 @@
 </template>
 
 <script>
-	import Navbar from './Navbar'
+	// import Navbar from './Navbar'
 	export default {
-		name: 'TentangKami',
+		// name: 'TentangKami',
+	    props: [ 'sejarah', 'visiMisi'],
 		components: {
-			Navbar
+			// Navbar
 		},
+		
 		data () {
 			return {
 

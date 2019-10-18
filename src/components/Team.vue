@@ -62,7 +62,7 @@
 	    </v-col>
 		</v-row>
 		<v-row class="mt-12">
-			<v-col v-for="item in data" :key="item.id">			
+			<v-col v-for="item in team" :key="item.id">			
 			<v-card style="height:100%" elevation="10" >
 				<v-card-text style="font-weight:bold">
 					<div>
@@ -96,7 +96,7 @@
 		},
 		data () {
 			return {
-				data: [
+				team: [
 					{
 						text: 'Magister di bidang manajemen dan ekonomi bisnis di UGM, kelahiran tahun 1966 ini terjun ke lapangan sudah lebih dari 28 tahun. Bidang keahlian project engineering dan sebagai penilai publik pada tahun 2018.',
 						url: require('../assets/Aksan.jpg'),
