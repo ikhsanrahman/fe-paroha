@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="background:none;z-index:99">
+		<v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
       <v-row class="transparent">
         <v-col>
           <v-row class="" >
@@ -67,9 +67,9 @@
         </v-col>
       </v-row>					
 		</v-container>        
-    <v-container fluid style="position:fixed;z-index:99" class="pr-4 mt-10">
+    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99" class="pr-4 mt-10">
       <v-row justify="end">
-        <v-app-bar-nav-icon class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions @click="home">HOME</v-expansion-panel-header>
@@ -100,53 +100,57 @@
     </v-container>
     <background></background>
     <!-- <profile :sejarah="sejarah" :visiMisi="visiMisi" ref="profile"></profile> -->
-    <v-container fluid class="profile align-center mt-12" id="sejarah">    
-    <v-row no-gutters class="sejarah" >
-      <v-col cols="12" md="8" >
-        <h1 style="color:red;text-decoration:underline;margin-left:21%">TENTANG KAMI</h1> 
-      </v-col>
-    </v-row>
-    <br>
-    <v-row no-gutters class="sejarah" justify="center">
-      <v-col cols="12" md="3" class="ml-12">
-        <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
-      </v-col>
-      <v-col cols="10" md="6" class="text" id="sejarah">
-        <h1>SEJARAH</h1>
-        <h3 style="color:red">
-          Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
-        </h3>
-        <br>
-        <p>
-          Layanan jasa yang membantu perusahaan anda dalam pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
-        </p>
-        <br>
-        <p>
-          PT Paroha Topaz Sejahtera berdiri pada tanggal 11 Februari 2019, no.7 berdasarkan akta notaris H.Sukirno, Perusahaan ini fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
-        </p>
-        <br>
-        <p>
-          PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Sejak bulan Juni 2019, badan usaha yang di kembangkan pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="visi-misi" id="visiMisi">
-      <v-col>
-        <h2>VISI</h2>
-        <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
-      </v-col>
-    </v-row>
-    <v-row class="visi-misi">
-      <v-col>
-        <h2>MISI</h2>
-        <p>
-          Menciptakan Nilai Ekonomi kepada para pemangku kepentingan, terutama pelanggan melalui layanan jasa inspeksi, pemetaan, sertifikasi, konsultasi serta jasa terkait lainnya untuk menjamin kepastian berusaha
-        </p>
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-container fluid class="profile align-center my-12" id="sejarah">    
+      <v-row no-gutters class="sejarah" >
+        <v-col cols="12" md="8" >
+          <h1 style="color:red;text-decoration:underline;margin-left:21%">TENTANG KAMI</h1> 
+        </v-col>
+      </v-row>
+      <br>
+      <v-row no-gutters class="sejarah" justify="center">
+        <v-col cols="12" md="3" class="ml-12">
+          <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
+        </v-col>
+        <v-col cols="10" md="6" class="text" id="sejarah">
+          <h1>SEJARAH</h1>
+          <h3 style="color:red">
+            Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
+          </h3>
+          <br>
+          <p>
+            Layanan jasa yang membantu perusahaan anda dalam pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
+          </p>
+          <br>
+          <p>
+            PT Paroha Topaz Sejahtera berdiri pada tanggal 11 Februari 2019, no.7 berdasarkan akta notaris H.Sukirno, Perusahaan ini fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
+          </p>
+          <br>
+          <p>
+            PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Sejak bulan Juni 2019, badan usaha yang di kembangkan pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
+          </p>
+        </v-col>
+      </v-row>
+      <v-row class="visi-misi" id="visiMisi">
+        <v-col>
+          <h2>VISI</h2>
+          <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
+        </v-col>
+      </v-row>
+      <v-row class="visi-misi">
+        <v-col>
+          <h2>MISI</h2>
+          <p>
+            Menciptakan Nilai Ekonomi kepada para pemangku kepentingan, terutama pelanggan melalui layanan jasa inspeksi, pemetaan, sertifikasi, konsultasi serta jasa terkait lainnya untuk menjamin kepastian berusaha
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+  <hr class="mx-12">
     <!-- <produkjasa :produk="produk"></produkjasa> -->
-    <v-container class="mt-12" id="produk">
+    <v-container class="my-12" id="produk">
+      <v-row justify="center" class="ma-12">
+        <h1>Produk dan Jasa</h1>
+      </v-row>
       <v-row>
         <v-card
           class="mx-auto my-6"
@@ -160,14 +164,13 @@
             height="100px"
             width="100px"
             :src="content.url">
-            <!-- <v-card-title>Top 10 Australian beaches</v-card-title> -->
           </v-img>
           <br>
           <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
 
           <v-card-text class="text--primary">
             <div>{{content.description}}</div>
-            <div v-for="add in content.point" class="mt-4 ml-2">
+            <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
                 <i class="material-icons">
                 add
@@ -186,83 +189,84 @@
       </v-row>
     </v-container>
     <!-- <team :team="team"></team> -->
+    <hr class="mx-12">
     <v-container class="align-center" id="team">
-    <v-row justify="center" class="mt-12">
-      <h1>MEET THE TEAM</h1>
-    </v-row>
-    <v-row no-gutters class="mt-12">
-      <v-col sm="3" class="text-center">
-        <v-avatar width="250" height="250">
-          <img
-            src="@/assets/Tambun.jpg"
-            alt="Tambun">
-        </v-avatar>
-        <h3 class="text-center mt-12">Hendra Irwanto Tambun</h3>
-        <br>
-        <hr class="mx-12">
-        <br>
-        <h2>Direktur Utama</h2>
-      </v-col>
-      <v-col sm="3" class="text-center">
-        <v-avatar width="250" height="250">
-          <img
-            src="../assets/Tallo.jpg"
-            alt="tallo">
-        </v-avatar>
-        <h3 class="text-center mt-12">Armandus Jong Tallo</h3>
-        <br>
-        <hr class="mx-12">
-        <br>
-        <h2>Wakil Direktur Utama</h2>
-      </v-col>
-      <v-col sm="3" class="text-center">
-        <v-avatar width="250" height="250">
-          <img
-            src="../assets/tobing.jpg"
-            alt="tobing">
-        </v-avatar>
-        <h3 class="text-center mt-12">Panuturi L Tobing</h3>
-        <br>
-        <hr class="mx-12">
-        <br>
-        <h2>Direktur Keuangan</h2>
-      </v-col>
-      <v-col sm="3" class="text-center">
-        <v-avatar width="250" height="250">
-          <img
-            src="../assets/Robintang.jpg"
-            alt="John">
-        </v-avatar>
-        <h3 class="text-center mt-12">Robintang Tua Simarmata</h3>
-        <br>
-        <hr class="mx-12">
-        <br>
-        <h2>Direktur Operasional</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mt-12">
-      <v-col v-for="item in team" :key="item.id">     
-      <v-card style="height:100%" elevation="10" >
-        <v-card-text style="font-weight:bold">
-          <div>
-            {{item.text}}
+      <v-row justify="center" class="my-12">
+        <h1>MEET THE TEAM</h1>
+      </v-row>
+      <v-row no-gutters class="my-12">
+        <v-col class="text-center my-6">
+          <v-avatar width="250" height="270">
+            <img
+              src="@/assets/Tambun.jpg"
+              alt="Tambun">
+          </v-avatar>
+          <h3 class="text-center mt-12">Hendra Irwanto Tambun</h3>
+          <br>
+          <hr class="mx-12">
+          <br>
+          <h2>Direktur Utama</h2>
+        </v-col>
+        <v-col class="text-center my-6">
+          <v-avatar width="250" height="270">
+            <img
+              src="../assets/Tallo.jpg"
+              alt="tallo">
+          </v-avatar>
+          <h3 class="text-center mt-12">Armandus Jong Tallo</h3>
+          <br>
+          <hr class="mx-12">
+          <br>
+          <h2>Wakil Direktur Utama</h2>
+        </v-col>
+        <v-col class="text-center my-6">
+          <v-avatar width="250" height="270">
+            <img
+              src="../assets/tobing.jpg"
+              alt="tobing">
+          </v-avatar>
+          <h3 class="text-center mt-12">Panuturi L Tobing</h3>
+          <br>
+          <hr class="mx-12">
+          <br>
+          <h2>Direktur Keuangan</h2>
+        </v-col>
+        <v-col class="text-center my-6">
+          <v-avatar width="250" height="270">
+            <img
+              src="../assets/Robintang.jpg"
+              alt="John">
+          </v-avatar>
+          <h3 class="text-center mt-12">Robintang Tua Simarmata</h3>
+          <br>
+          <hr class="mx-12">
+          <br>
+          <h2>Direktur Operasional</h2>
+        </v-col>
+      </v-row>
+      <v-row class="my-12">
+        <v-col v-for="item in team" :key="item.id">     
+        <v-card style="height:100%" elevation="10" >
+          <v-card-text style="font-weight:bold">
+            <div>
+              {{item.text}}
+            </div>
+          </v-card-text>
+          <div class="name">
+            
+            <v-row style="height:130px;" class="mx-12 mt-12">
+              <v-avatar width="80" height="80" class="mt-n6">
+                <img
+                  :src="item.url"
+                  alt="">
+              </v-avatar>
+              <div class="ml-10 mt-6" style="font-weight:bold">{{item.name}} </div>
+            </v-row>
           </div>
-        </v-card-text>
-        <div style="background:blue">
-          
-          <v-row style="height:130px;" class="mx-12 mt-12">
-            <v-avatar width="80" height="80" class="mt-n6">
-              <img
-                :src="item.url"
-                alt="">
-            </v-avatar>
-            <div class="ml-10 mt-6" style="font-weight:bold">{{item.name}} </div>
-          </v-row>
-        </div>
-      </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+        </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
 	</div>
 </template>
 
@@ -356,13 +360,18 @@ import Background from './Header.vue'
 .navbar {
   height: 160px;
   width: 100vw;
-  background: hsl(200, 50%, 50%);
+  /* background: hsl(155, 31%, 50%); */
+  background: none;
   position: fixed;
   box-shadow: 0 2px 15px rgba(71, 120, 120, 0.5);
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
 }
 .navbar.navbar--hidden {
+  box-shadow: none;
+  transform: translate3d(0, -100%, 0);
+}
+.navbar-hidden {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
 }
@@ -380,6 +389,9 @@ import Background from './Header.vue'
   }
   a {
     text-decoration: none;
+  }
+  .name {
+    background: rgb(154, 154, 231);
   }
   
 </style>
