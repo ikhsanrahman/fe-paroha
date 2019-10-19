@@ -1,5 +1,5 @@
 sudo npm run build
-cd /dist
+cd dist/
 sudo git init
 sudo git add -A
 sudo git commit -m "updated" --no-verify
