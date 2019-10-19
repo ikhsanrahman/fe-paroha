@@ -11,27 +11,30 @@
         <v-col class="d-none d-lg-block">
           <v-row no-gutters>
             <v-col>
-              <v-row no-gutters>
+              <v-row>
+
               <i class="material-icons">
                 phone
               </i>
               <h4>+6221 4614 889</h4>
               </v-row>
             </v-col>
-            <v-col sm="4">
-              <v-row no-gutters>
-                <i class="material-icons">
+            <v-col style="font-weight:bold;">
+              <v-row >
+                <!-- <i class="material-icons">
                   email
-                </i>
-                <h4>support@paroha.id</h4>
+                </i> -->
+                <v-icon>email</v-icon>
+                support@paroha.id
               </v-row>
             </v-col>
-            <v-col sm="4">
-              <v-row no-gutters>
-                <i class="material-icons">
+            <v-col style="font-weight:bold;">
+              <v-row >
+                <!-- <i class="material-icons">
                   access_time
-                </i>
-                <h4>Senin - Jumat : 09.00 sd 18.00 WIB</h4>
+                </i> -->
+                <v-icon>access_time</v-icon>
+                Senin - Jumat : 09.00 sd 18.00 WIB
               </v-row>
             </v-col>
           </v-row>
@@ -98,7 +101,17 @@
         </v-expansion-panels>  
       </v-row>
     </v-container>
-    <background></background>
+    <!-- <background></background> -->
+    <v-container class="header d-flex align-center" fluid>
+      <v-row class="ml-12">
+        <v-col>
+          <h1>Jasa Terbaik <span style="color:red">Konsultasi</span> </h1>
+          <h2>dengan Tim Profesional</h2>
+          <br>
+          <v-btn color="error">Contact us</v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
     <!-- <profile :sejarah="sejarah" :visiMisi="visiMisi" ref="profile"></profile> -->
     <v-container fluid class="profile align-center my-12" id="sejarah">    
       <v-row no-gutters class="sejarah" >
@@ -111,7 +124,7 @@
         <v-col cols="12" md="3" class="ml-12">
           <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
         </v-col>
-        <v-col cols="10" md="6" class="text" id="sejarah">
+        <v-col cols="10" md="6" id="sejarah" v-wow data-wow-delay="0.2s" data-wow-duration="2s" class="text bounceInUp">
           <h1>SEJARAH</h1>
           <h3 style="color:red">
             Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
@@ -130,7 +143,7 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi" id="visiMisi">
+      <v-row class="visi-misi fadeInUp" v-wow data-wow-delay="1s" data-wow-duration="2s" id="visiMisi">
         <v-col>
           <h2>VISI</h2>
           <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
@@ -267,8 +280,36 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-footer
+    dark
+    padless>
+    <v-card
+      class="flex"
+      flat
+      tile>
+      <v-card-title class="teal">
+        <strong class="subheading">Get connected with us on social networks!</strong>
+
+        <v-spacer></v-spacer>
+
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="mx-4"
+          dark
+          icon>
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-title>
+
+      <v-card-text class="py-2 white--text text-center">
+        {{ new Date().getFullYear() }} — <strong>Paroha</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
 	</div>
 </template>
+
 
 <script>
 // import Profile from './Profile.vue'
@@ -287,6 +328,13 @@ import Background from './Header.vue'
 				us: false,
         showNavbar: true,
         lastScrollPositon: 0,
+        icons: [
+          'fab fa-facebook',
+          'fab fa-twitter',
+          'fab fa-google-plus',
+          'fab fa-linkedin',
+          'fab fa-instagram',
+        ],
         data: [
           {
             url: require('@/assets/paroha.png'),
@@ -358,7 +406,7 @@ import Background from './Header.vue'
 </script>
 <style scoped>
 .navbar {
-  height: 160px;
+  height: auto;
   width: 100vw;
   /* background: hsl(155, 31%, 50%); */
   background: rgb(233, 230, 230);
@@ -392,6 +440,13 @@ import Background from './Header.vue'
   }
   .name {
     background: rgb(154, 154, 231);
+  }
+  .header {
+    background: url('../assets/Gambar-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 890px;
   }
   
 </style>
