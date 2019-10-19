@@ -160,7 +160,7 @@
     </v-container>
   <hr class="mx-12">
     <!-- <produkjasa :produk="produk"></produkjasa> -->
-    <v-container class="my-12" id="produk" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <v-container class="my-12" id="produk">
       <v-row justify="center" class="ma-12">
         <h1>Produk dan Jasa</h1>
       </v-row>
@@ -170,7 +170,8 @@
           width="400"
           height="auto"
           v-for="content in data"
-          :key="content.id">
+          :key="content.id"
+          data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <br>
           <v-img
             class="mx-auto mt-12"
@@ -181,7 +182,7 @@
           <br>
           <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
 
-          <v-card-text class="text--primary" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+          <v-card-text class="text--primary">
             <div>{{content.description}}</div>
             <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
