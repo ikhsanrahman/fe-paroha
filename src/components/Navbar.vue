@@ -121,10 +121,10 @@
       </v-row>
       <br>
       <v-row no-gutters class="sejarah" justify="center">
-        <v-col cols="12" md="3" class="ml-12">
+        <v-col cols="12" md="3" class="ml-12" data-aos="fade-right" >
           <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
         </v-col>
-        <v-col cols="10" md="6" id="sejarah" v-wow data-wow-delay="0.2s" data-wow-duration="2s" class="text bounceInUp">
+        <v-col cols="10" md="6" id="sejarah" data-aos="fade-left"  class="text">
           <h1>SEJARAH</h1>
           <h3 style="color:red">
             Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
@@ -143,13 +143,13 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi fadeInUp" v-wow data-wow-delay="1s" data-wow-duration="2s" id="visiMisi">
+      <v-row class="visi-misi" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <v-col>
           <h2>VISI</h2>
           <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi">
+      <v-row class="visi-misi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <v-col>
           <h2>MISI</h2>
           <p>
@@ -160,7 +160,7 @@
     </v-container>
   <hr class="mx-12">
     <!-- <produkjasa :produk="produk"></produkjasa> -->
-    <v-container class="my-12" id="produk">
+    <v-container class="my-12" id="produk" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <v-row justify="center" class="ma-12">
         <h1>Produk dan Jasa</h1>
       </v-row>
@@ -181,7 +181,7 @@
           <br>
           <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
 
-          <v-card-text class="text--primary">
+          <v-card-text class="text--primary" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <div>{{content.description}}</div>
             <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
@@ -207,8 +207,8 @@
       <v-row justify="center" class="my-12">
         <h1>MEET THE TEAM</h1>
       </v-row>
-      <v-row no-gutters class="my-12">
-        <v-col class="text-center my-6">
+      <v-row no-gutters class="my-12" >
+        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <v-avatar width="250" height="270">
             <img
               src="@/assets/Tambun.jpg"
@@ -220,7 +220,7 @@
           <br>
           <h2>Direktur Utama</h2>
         </v-col>
-        <v-col class="text-center my-6">
+        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <v-avatar width="250" height="270">
             <img
               src="../assets/Tallo.jpg"
@@ -232,7 +232,7 @@
           <br>
           <h2>Wakil Direktur Utama</h2>
         </v-col>
-        <v-col class="text-center my-6">
+        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <v-avatar width="250" height="270">
             <img
               src="../assets/tobing.jpg"
@@ -244,7 +244,7 @@
           <br>
           <h2>Direktur Keuangan</h2>
         </v-col>
-        <v-col class="text-center my-6">
+        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <v-avatar width="250" height="270">
             <img
               src="../assets/Robintang.jpg"
@@ -258,7 +258,7 @@
         </v-col>
       </v-row>
       <v-row class="my-12">
-        <v-col v-for="item in team" :key="item.id">     
+        <v-col v-for="item in team" :key="item.id" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">     
         <v-card style="height:100%" elevation="10" >
           <v-card-text style="font-weight:bold">
             <div>
@@ -316,6 +316,7 @@
 import Background from './Header.vue'
 // import Produkjasa from './ProdukJasa.vue'
 // import Team from './Team.vue'
+import AOS from 'aos'
 
 	export default {
 		name: 'Single',
@@ -374,6 +375,10 @@ import Background from './Header.vue'
     
 			}
 		},
+    created () {
+       AOS.init()
+       console.log(AOS)
+    },
     mounted () {
       window.addEventListener('scroll', this.onScroll)
     },
