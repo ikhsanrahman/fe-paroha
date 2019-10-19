@@ -3,7 +3,7 @@
 		<v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
       <v-row class="transparent">
         <v-col>
-          <v-row justify="start">
+          <v-row >
             <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
             <h4 class="mt-10 ml-n4 d-none d-lg-block">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
@@ -12,7 +12,6 @@
           <v-row no-gutters>
             <v-col>
               <v-row>
-
               <i class="material-icons">
                 phone
               </i>
@@ -21,18 +20,12 @@
             </v-col>
             <v-col style="font-weight:bold;">
               <v-row >
-                <!-- <i class="material-icons">
-                  email
-                </i> -->
                 <v-icon>email</v-icon>
                 support@paroha.id
               </v-row>
             </v-col>
             <v-col style="font-weight:bold;">
               <v-row >
-                <!-- <i class="material-icons">
-                  access_time
-                </i> -->
                 <v-icon>access_time</v-icon>
                 Senin - Jumat : 09.00 sd 18.00 WIB
               </v-row>
@@ -70,9 +63,9 @@
         </v-col>
       </v-row>					
 		</v-container>        
-    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99">
+    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99" class="pr-4 mt-10">
       <v-row justify="end">
-        <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none mr-10 mt-10" @click="show=!show"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions @click="home">HOME</v-expansion-panel-header>
@@ -113,18 +106,18 @@
       </v-row>
     </v-container>
     <!-- <profile :sejarah="sejarah" :visiMisi="visiMisi" ref="profile"></profile> -->
-    <v-container fluid class="profile align-center my-12" id="sejarah">    
-      <v-row no-gutters class="sejarah" >
-        <v-col cols="12" md="8" >
-          <h1 style="color:red;text-decoration:underline;margin-left:21%">TENTANG KAMI</h1> 
+    <v-container fluid class=" my-12" id="sejarah">    
+      <v-row no-gutters>
+        <v-col cols="12" class="text-center">
+          <h1 style="color:red;">TENTANG KAMI</h1> 
         </v-col>
       </v-row>
       <br>
-      <v-row no-gutters class="sejarah" justify="center">
-        <v-col cols="12" md="3" class="ml-12" data-aos="fade-right" >
+      <v-row no-gutters justify="center">
+        <v-col style="margin-left:10%" cols="10" md="4">
           <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
         </v-col>
-        <v-col cols="10" md="6" id="sejarah" data-aos="fade-left"  class="text-justify" >
+        <v-col cols="10" md="6" id="sejarah" class="text-justify">
           <h1>SEJARAH</h1>
           <h3 style="color:red">
             Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
@@ -161,12 +154,12 @@
   <hr class="mx-12">
     <!-- <produkjasa :produk="produk"></produkjasa> -->
     <v-container class="my-12" id="produk">
-      <v-row justify="center" class="ma-12">
+      <v-row justify="center">
         <h1>Produk dan Jasa</h1>
       </v-row>
       <v-row>
         <v-card
-          class="mx-auto my-6"
+          class="mx-auto my-6 text-justify"
           width="400"
           height="auto"
           v-for="content in data"
@@ -182,7 +175,7 @@
           <br>
           <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
 
-          <v-card-text class="text--primary text-justify">
+          <v-card-text class="text--primary">
             <div>{{content.description}}</div>
             <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
@@ -208,8 +201,8 @@
       <v-row justify="center" class="my-12">
         <h1>MEET THE TEAM</h1>
       </v-row>
-      <v-row no-gutters class="my-12" >
-        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <v-row no-gutters class="my-12" data-aos="fade-up">
+        <v-col class="text-center my-6">
           <v-avatar width="250" height="270">
             <img
               src="@/assets/Tambun.jpg"
@@ -221,7 +214,7 @@
           <br>
           <h2>Direktur Utama</h2>
         </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <v-col class="text-center my-6" data-aos="fade-up">
           <v-avatar width="250" height="270">
             <img
               src="../assets/Tallo.jpg"
@@ -233,7 +226,7 @@
           <br>
           <h2>Wakil Direktur Utama</h2>
         </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <v-col class="text-center my-6" data-aos="fade-up">
           <v-avatar width="250" height="270">
             <img
               src="../assets/tobing.jpg"
@@ -245,7 +238,7 @@
           <br>
           <h2>Direktur Keuangan</h2>
         </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <v-col class="text-center my-6" data-aos="fade-up">
           <v-avatar width="250" height="270">
             <img
               src="../assets/Robintang.jpg"
@@ -259,8 +252,8 @@
         </v-col>
       </v-row>
       <v-row class="my-12 text-justify">
-        <v-col v-for="item in team" :key="item.id" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">     
-        <v-card style="height:100%" elevation="10" >
+        <v-col v-for="item in team" :key="item.id">     
+        <v-card style="height:100%" elevation="10" data-aos="fade-up">
           <v-card-text style="font-weight:bold">
             <div>
               {{item.text}}
