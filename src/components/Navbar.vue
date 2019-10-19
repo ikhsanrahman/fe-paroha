@@ -3,9 +3,9 @@
 		<v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
       <v-row class="transparent">
         <v-col>
-          <v-row class="" >
+          <v-row justify="start">
             <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
-            <h4 class="mt-10 ml-n4">PT PAROHA TOPAZ SEJAHTERA</h4>
+            <h4 class="mt-10 ml-n4 d-none d-lg-block">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
         </v-col>
         <v-col class="d-none d-lg-block">
@@ -70,9 +70,9 @@
         </v-col>
       </v-row>					
 		</v-container>        
-    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99" class="pr-4 mt-10">
+    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99">
       <v-row justify="end">
-        <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none mr-10 mt-10" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions @click="home">HOME</v-expansion-panel-header>
@@ -124,7 +124,7 @@
         <v-col cols="12" md="3" class="ml-12" data-aos="fade-right" >
           <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
         </v-col>
-        <v-col cols="10" md="6" id="sejarah" data-aos="fade-left"  class="text">
+        <v-col cols="10" md="6" id="sejarah" data-aos="fade-left"  class="text-justify" >
           <h1>SEJARAH</h1>
           <h3 style="color:red">
             Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
@@ -143,13 +143,13 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <v-row class="visi-misi text-justify" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <v-col>
           <h2>VISI</h2>
           <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <v-row class="visi-misi text-justify" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <v-col>
           <h2>MISI</h2>
           <p>
@@ -182,7 +182,7 @@
           <br>
           <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
 
-          <v-card-text class="text--primary">
+          <v-card-text class="text--primary text-justify">
             <div>{{content.description}}</div>
             <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
@@ -258,7 +258,7 @@
           <h2>Direktur Operasional</h2>
         </v-col>
       </v-row>
-      <v-row class="my-12">
+      <v-row class="my-12 text-justify">
         <v-col v-for="item in team" :key="item.id" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">     
         <v-card style="height:100%" elevation="10" >
           <v-card-text style="font-weight:bold">
