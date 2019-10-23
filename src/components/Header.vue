@@ -1,17 +1,14 @@
 <template>
-	<!-- <div class="header"> -->
-
-		<v-container class="header d-flex align-center" fluid>
-			<v-row class="ml-12">
-				<v-col cols="12">
-					<h1>Jasa Terbaik <span style="color:red">Konsultasi</span> </h1>
-					<h2>dengan Tim Profesional</h2>
-					<br>
-					<v-btn color="error">Contact us</v-btn>
-				</v-col>
-			</v-row>
-		</v-container>
-	<!-- </div>	 -->
+	<v-container class="header d-flex align-center" fluid>
+		<v-row class="ml-12">
+			<v-col cols="12">
+				<h1>Jasa Terbaik <span style="color:red">Konsultasi</span> </h1>
+				<h2>dengan Tim Profesional</h2>
+				<br>
+				<v-btn color="error">Contact us</v-btn>
+			</v-col>
+		</v-row>
+	</v-container>
 </template>
 
 <script>

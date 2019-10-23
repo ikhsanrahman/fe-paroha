@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
-      <v-row class="transparent">
+  <div>
+    <v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
+      <v-row>
         <v-col>
           <v-row >
             <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
@@ -40,29 +40,29 @@
               <v-btn text color="primary" @click="us=!us">TENTANG KAMI</v-btn>
               <v-expansion-panels v-show="us">
                 <v-expansion-panel justify="center">
-                  <v-expansion-panel-header hide-actions ><a href="#sejarah" @click="us=false" style="color:black" title="">Sejarah</a></v-expansion-panel-header>
-                  <v-expansion-panel-header hide-actions ><a href="#visiMisi" style="color:black" @click="us=false" title="">Visi Misi</a></v-expansion-panel-header>
-                  <v-expansion-panel-header hide-actions ><a href="#team" style="color:black" @click="us=false" title="">Tim Kami</a></v-expansion-panel-header>
+                  <v-expansion-panel-header hide-actions ><a href="/#sejarah" @click="us=false" style="color:black" title="">Sejarah</a></v-expansion-panel-header>
+                  <v-expansion-panel-header hide-actions ><a href="/#visiMisi" style="color:black" @click="us=false" title="">Visi Misi</a></v-expansion-panel-header>
+                  <v-expansion-panel-header hide-actions ><a href="/#team" style="color:black" @click="us=false" title="">Tim Kami</a></v-expansion-panel-header>
                   <v-expansion-panel-header hide-actions>Legalitas</v-expansion-panel-header>
                 </v-expansion-panel>
               </v-expansion-panels>
             </v-col>
             <v-col>
-              <v-btn text color="primary" ><a href="#produk" title="">PRODUK & JASA</a></v-btn>
+              <v-btn text color="primary" ><a href="/#produk" title="">PRODUK & JASA</a></v-btn>
             </v-col>
             <v-col>
               <v-btn text color="primary">REKANAN</v-btn>
             </v-col>
             <v-col>
-              <v-btn text color="primary">BERITA</v-btn>
+              <v-btn text color="primary" @click="berita">BERITA</v-btn>
             </v-col>
             <v-col>
-              <v-btn text color="primary">KONTAK</v-btn>
+              <v-btn text color="primary" @click="contact">KONTAK</v-btn>
             </v-col>
           </v-row>
         </v-col>
-      </v-row>					
-		</v-container>        
+      </v-row>          
+    </v-container>        
     <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99" class="pr-4 mt-10">
       <v-row justify="end">
         <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
@@ -73,305 +73,39 @@
           <v-expansion-panel>
             <v-expansion-panel-header>Tentang Kami</v-expansion-panel-header>
               <v-expansion-panel-content>
-                <v-expansion-panel-header hide-actions ><a href="#sejarah" title="">Sejarah</a></v-expansion-panel-header>
-                <v-expansion-panel-header hide-actions ><a href="#visiMisi" title="">Visi Misi</a></v-expansion-panel-header>
-                <v-expansion-panel-header hide-actions ><a href="#team" title="">Tim Kami</a></v-expansion-panel-header>
+                <v-expansion-panel-header hide-actions ><a href="/#sejarah" title="">Sejarah</a></v-expansion-panel-header>
+                <v-expansion-panel-header hide-actions ><a href="/#visiMisi" title="">Visi Misi</a></v-expansion-panel-header>
+                <v-expansion-panel-header hide-actions ><a href="/#team" title="">Tim Kami</a></v-expansion-panel-header>
                 <v-expansion-panel-header hide-actions>Legalitas</v-expansion-panel-header>
               </v-expansion-panel-content>
            </v-expansion-panel>
            <v-expansion-panel>
-            <v-expansion-panel-header hide-actions><a href="#produk" title="">PRODUK & JASA</a></v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions><a href="/#produk" title="">PRODUK & JASA</a></v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions>REKANAN</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions>BERITA</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="berita">BERITA</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions>KONTAK</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="contact">KONTAK</v-expansion-panel-header>
           </v-expansion-panel>
         </v-expansion-panels>  
       </v-row>
     </v-container>
-    <!-- <background></background> -->
-    <v-container class="header d-flex align-center" fluid>
-      <v-row class="ml-12">
-        <v-col>
-          <h1>Jasa Terbaik <span style="color:red">Konsultasi</span> </h1>
-          <h2>dengan Tim Profesional</h2>
-          <br>
-          <v-btn color="error">Contact us</v-btn>
-        </v-col>
-      </v-row>
-    </v-container>
-    <!-- <profile :sejarah="sejarah" :visiMisi="visiMisi" ref="profile"></profile> -->
-    <v-container fluid class=" my-12" id="sejarah">    
-      <v-row no-gutters>
-        <v-col cols="12" class="text-center">
-          <h1 style="color:red;">TENTANG KAMI</h1> 
-        </v-col>
-      </v-row>
-      <br>
-      <v-row no-gutters justify="center">
-        <v-col style="margin-left:10%" cols="10" md="4">
-          <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
-        </v-col>
-        <v-col cols="10" md="6" id="sejarah" class="text-justify">
-          <h1>SEJARAH</h1>
-          <h3 style="color:red">
-            Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
-          </h3>
-          <br>
-          <p>
-            Layanan jasa yang membantu perusahaan anda dalam pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
-          </p>
-          <br>
-          <p>
-            PT Paroha Topaz Sejahtera berdiri pada tanggal 11 Februari 2019, no.7 berdasarkan akta notaris H.Sukirno, Perusahaan ini fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
-          </p>
-          <br>
-          <p>
-            PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Sejak bulan Juni 2019, badan usaha yang di kembangkan pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
-          </p>
-        </v-col>
-      </v-row>
-      <v-row class="visi-misi text-justify" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <v-col>
-          <h2>VISI</h2>
-          <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
-        </v-col>
-      </v-row>
-      <v-row class="visi-misi text-justify" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <v-col>
-          <h2>MISI</h2>
-          <p>
-            Menciptakan Nilai Ekonomi kepada para pemangku kepentingan, terutama pelanggan melalui layanan jasa inspeksi, pemetaan, sertifikasi, konsultasi serta jasa terkait lainnya untuk menjamin kepastian berusaha
-          </p>
-        </v-col>
-      </v-row>
-    </v-container>
-  <hr class="mx-12">
-    <!-- <produkjasa :produk="produk"></produkjasa> -->
-    <v-container class="my-12" id="produk">
-      <v-row justify="center">
-        <h1>Produk dan Jasa</h1>
-      </v-row>
-      <v-row>
-        <v-card
-          class="mx-auto my-6 text-justify"
-          width="400"
-          height="auto"
-          v-for="content in data"
-          :key="content.id"
-          data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-          <br>
-          <v-img
-            class="mx-auto mt-12"
-            height="100px"
-            width="100px"
-            :src="content.url">
-          </v-img>
-          <br>
-          <v-card-subtitle class="pl-4 mt-6" style="font-weight:bold">{{content.title}}</v-card-subtitle>
-
-          <v-card-text class="text--primary">
-            <div>{{content.description}}</div>
-            <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
-              <v-row>
-                <i class="material-icons">
-                add
-                </i>
-                <h4>{{add}}</h4>
-              </v-row>
-            </div>
-          </v-card-text>
-            <v-btn class="float-right"
-              color="orange"
-              text>
-
-              Detail...
-            </v-btn>
-        </v-card>
-      </v-row>
-    </v-container>
-    <!-- <team :team="team"></team> -->
-    <hr class="mx-12">
-    <v-container class="align-center" id="team">
-      <v-row justify="center" class="my-12">
-        <h1>MEET THE TEAM</h1>
-      </v-row>
-      <v-row no-gutters class="my-12" data-aos="fade-up">
-        <v-col class="text-center my-6">
-          <v-avatar width="250" height="270">
-            <img
-              src="@/assets/Tambun.jpg"
-              alt="Tambun">
-          </v-avatar>
-          <h3 class="text-center mt-12">Hendra Irwanto Tambun</h3>
-          <br>
-          <hr class="mx-12">
-          <br>
-          <h2>Direktur Utama</h2>
-        </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
-            <img
-              src="../assets/Tallo.jpg"
-              alt="tallo">
-          </v-avatar>
-          <h3 class="text-center mt-12">Armandus Jong Tallo</h3>
-          <br>
-          <hr class="mx-12">
-          <br>
-          <h2>Wakil Direktur Utama</h2>
-        </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
-            <img
-              src="../assets/tobing.jpg"
-              alt="tobing">
-          </v-avatar>
-          <h3 class="text-center mt-12">Panuturi L Tobing</h3>
-          <br>
-          <hr class="mx-12">
-          <br>
-          <h2>Direktur Keuangan</h2>
-        </v-col>
-        <v-col class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
-            <img
-              src="../assets/Robintang.jpg"
-              alt="John">
-          </v-avatar>
-          <h3 class="text-center mt-12">Robintang Tua Simarmata</h3>
-          <br>
-          <hr class="mx-12">
-          <br>
-          <h2>Direktur Operasional</h2>
-        </v-col>
-      </v-row>
-      <v-row class="my-12 text-justify">
-        <v-col v-for="item in team" :key="item.id">     
-        <v-card style="height:100%" elevation="10" data-aos="fade-up">
-          <v-card-text style="font-weight:bold">
-            <div>
-              {{item.text}}
-            </div>
-          </v-card-text>
-          <div class="name">
-            
-            <v-row style="height:130px;" class="mx-12 mt-12">
-              <v-avatar width="80" height="80" class="mt-n6">
-                <img
-                  :src="item.url"
-                  alt="">
-              </v-avatar>
-              <div class="ml-10 mt-6" style="font-weight:bold">{{item.name}} </div>
-            </v-row>
-          </div>
-        </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-footer
-    dark
-    padless>
-    <v-card
-      class="flex"
-      flat
-      tile>
-      <v-card-title class="teal">
-        <strong class="subheading">Get connected with us on social networks!</strong>
-
-        <v-spacer></v-spacer>
-
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4"
-          dark
-          icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-title>
-
-      <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>Paroha</strong>
-      </v-card-text>
-    </v-card>
-  </v-footer>
-	</div>
+  </div>
 </template>
 
-
 <script>
-// import Profile from './Profile.vue'
-import Background from './Header.vue'
-// import Produkjasa from './ProdukJasa.vue'
-// import Team from './Team.vue'
-import AOS from 'aos'
-
-	export default {
-		name: 'Single',
-    components: {
-      Background
-    },
-		data () {
-			return {
-				show: false,
-				us: false,
+  export default {
+    data () {
+      return {
+        show: false,
+        us: false,
         showNavbar: true,
         lastScrollPositon: 0,
-        icons: [
-          'fab fa-facebook',
-          'fab fa-twitter',
-          'fab fa-google-plus',
-          'fab fa-linkedin',
-          'fab fa-instagram',
-        ],
-        data: [
-          {
-            url: require('@/assets/paroha.png'),
-            title: 'PEMETAAN',
-            description: 'Pemetaan atau yang disebut dengan Geomapping Peta merupakan suatu gambaran yang ada dari permukaan bumi ini yang di gambarkan di bidang datar dalam proyeksi tertentu'
-          },
-          {
-            url: require('@/assets/paroha.png'),
-            title: 'PELATIHAN',
-            description: 'Kami menyediakan jasa pelatihan yang membantu pemangku bisnis terutama dalam meningkatkan kompetensi dan kapasitas di bidang',
-            point: [ 'Engineering Management', 'IT Consultant', 'Geometric Training']
-          },
-          {
-            url: require('@/assets/paroha.png'),
-            title: 'PEMETAAN',
-            description: 'Kami menyediakan jasa konsultasi profesional, handal dan tersertifikasi kompetensinya dan memiliki kapasitas di bidang',
-            point: [ 'Engineering Management', 'IT Consultant', 'Geometric Training']
-          }
-        ],
-        team: [
-          {
-            text: 'Magister di bidang manajemen dan ekonomi bisnis di UGM, kelahiran tahun 1966 ini terjun ke lapangan sudah lebih dari 28 tahun. Bidang keahlian project engineering dan sebagai penilai publik pada tahun 2018.',
-            url: require('../assets/Aksan.jpg'),
-            name: 'M Aksan Muzakir Engineer.'
-          },
-          {
-            text: 'Magister di bidang manajemen dan ekonomi bisnis di UGM, kelahiran tahun 1966 ini terjun ke lapangan sudah lebih dari 28 tahun. Bidang keahlian project engineering dan sebagai penilai publik pada tahun 2018.',
-            url: require('../assets/Dera.jpg'),
-            name: 'Dera Saraswati S.T'
-          },
-          {
-            text: 'Magister di bidang manajemen dan ekonomi bisnis di UGM, kelahiran tahun 1966 ini terjun ke lapangan sudah lebih dari 28 tahun. Bidang keahlian project engineering dan sebagai penilai publik pada tahun 2018.',
-            url: require('../assets/Hardinal.jpg'),
-            name: 'Prof.Dr.Hardinal M.Sc'
-          }
-        ]
-    
-			}
-		},
-    created () {
-       AOS.init()
-       console.log(AOS)
+      }
     },
     mounted () {
       window.addEventListener('scroll', this.onScroll)
@@ -379,7 +113,7 @@ import AOS from 'aos'
     beforeDestroy () {
       window.removeEventListener('scroll', this.onScroll)
     },
-		methods: {
+    methods: {
       onScroll () {
         const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
         if (currentScrollPosition < 0) {
@@ -387,22 +121,26 @@ import AOS from 'aos'
         }
         // Stop executing this function if the difference between
         // current scroll position and last scroll position is less than some offset
-        if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) {
           return
         }
         this.showNavbar = currentScrollPosition < this.lastScrollPosition
         this.lastScrollPosition = currentScrollPosition
 
       },
-			home () {
-				this.$router.push({name:'home'}).catch(err => {})
-			},
-      produk () {
-        this.$router.push({name:'produk'})
+      home () {
+        this.$router.push({name:'home'}).catch(err => {})
+      },
+      contact () {
+        this.$router.push({name:'contact'})
+      },
+      berita () {
+        this.$router.push({name:'berita'})
       }
-		}
-	}
+    }
+  }
 </script>
+
 <style scoped>
 .navbar {
   height: auto;
@@ -422,30 +160,7 @@ import AOS from 'aos'
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
 }
-.profile {
-    height: 100%;
-  }
-  .visi-misi {
-    margin-left: 10%;
-  }
-  .sejarah {
-    margin-left: 5%;
-  }
-  .image {
-    margin-left:1%;
-  }
-  a {
+a {
     text-decoration: none;
   }
-  .name {
-    background: rgb(154, 154, 231);
-  }
-  .header {
-    background: url('../assets/Gambar-1.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 890px;
-  }
-  
 </style>
