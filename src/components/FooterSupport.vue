@@ -1,5 +1,5 @@
 <template>
-	<div class="cyan lighten-5">
+	<div class="cyan lighten-5" id="support">
 		<v-container>
 			<v-row no-gutters class='mt-12'>
 				<v-col>

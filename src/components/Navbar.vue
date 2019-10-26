@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="4">
           <v-row >
-            <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
+            <img src="@/assets/paroha.png" width="150px" height="100px" alt="">
             <h4 class="mt-10 ml-n4 d-none d-lg-block">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
         </v-col>
@@ -57,7 +57,7 @@
               <v-btn text color="primary" ><a href="/#produk" title="">PRODUK & JASA</a></v-btn>
             </v-col>
             <v-col class="text-center">
-              <v-btn text color="primary">REKANAN</v-btn>
+              <v-btn text color="primary" @click="rekanan">REKANAN</v-btn>
             </v-col>
             <v-col class="text-center">
               <v-btn text color="primary" @click="berita">BERITA</v-btn>
@@ -89,7 +89,7 @@
             <v-expansion-panel-header hide-actions><a href="/#produk" title="">PRODUK & JASA</a></v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions>REKANAN</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="rekanan">REKANAN</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions @click="berita">BERITA</v-expansion-panel-header>
@@ -142,6 +142,9 @@
       },
       berita () {
         this.$router.push({name:'berita'})
+      },
+      rekanan () {
+        this.$router.push({name:'rekanan'})
       }
     }
   }

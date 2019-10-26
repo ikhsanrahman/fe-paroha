@@ -4,9 +4,12 @@
     <background></background>
     <profile></profile>
     <hr class="mx-12">
+    <team></team>
+    <legalitas></legalitas>
+    <!-- <br> -->
+    <hr>
     <produkjasa></produkjasa>
     
-    <team></team>
     <hr class="mx-12">
     <footersupport class="mt-12"></footersupport>
     <footerend></footerend>
@@ -26,6 +29,7 @@ import Background from './Header.vue'
 import Profile from './Profile.vue'
 import Produkjasa from './ProdukJasa.vue'
 import Team from './Team'
+import Legalitas from './Legalitas'
 
 	export default {
 		name: 'Single',
@@ -36,7 +40,8 @@ import Team from './Team'
       Profile,
       Produkjasa,
       Team,
-      Footerend
+      Footerend,
+      Legalitas
       
     },
 		data () {

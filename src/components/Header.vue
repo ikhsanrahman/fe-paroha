@@ -5,7 +5,7 @@
 				<h1>Jasa Terbaik <span style="color:red">Konsultasi</span> </h1>
 				<h2>dengan Tim Profesional</h2>
 				<br>
-				<v-btn color="error">Contact us</v-btn>
+				<v-btn color="error"><a href="/#support" title="">Support </a></v-btn>
 			</v-col>
 		</v-row>
 	</v-container>
@@ -33,5 +33,8 @@
     background-attachment: fixed;
     width: 100%;
     height: 890px;
+  }
+  a {
+  	text-decoration: none;
   }
 </style>

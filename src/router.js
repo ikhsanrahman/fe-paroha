@@ -40,6 +40,11 @@ export default new Router({
       path: '/berita',
       name: 'berita',
       component: () => import('@/components/Berita.vue')
+    },
+    {
+      path: '/rekanan',
+      name: 'rekanan',
+      component: () => import('@/components/Rekanan.vue')
     }
   ]
 })
