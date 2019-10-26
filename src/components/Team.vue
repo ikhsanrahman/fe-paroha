@@ -64,14 +64,16 @@
 	          </v-card-text>
 	          <div class="light-blue lighten-2">
 	            
-	            <v-row style="height:130px;" class="mx-12 mt-12">
+	            <v-row style="height:130px;" class="mx-12 mt-6">
 	              <v-avatar width="80" height="80" class="mt-n6">
 	                <img
 	                  :src="data.url"
 	                  alt="">
 	              </v-avatar>
-	              <div class="ml-10 mt-6" style="font-weight:bold">{{data.name}} </div>
-	            </v-row>
+                <v-col class="ml-12 mt-n12" cols="12">
+  	              <div class="ml-10 mt-n4" style="font-weight:bold;">{{data.name}} </div>
+	              </v-col>
+              </v-row>
 	          </div>
 	        </v-card>
         </v-col>

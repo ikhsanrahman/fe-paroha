@@ -2,41 +2,47 @@
   <div>
     <v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
       <v-row>
-        <v-col>
+        <v-col cols="4">
           <v-row >
             <img src="@/assets/paroha.png" width="120px" height="100px" alt="">
             <h4 class="mt-10 ml-n4 d-none d-lg-block">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
         </v-col>
-        <v-col class="d-none d-lg-block">
-          <v-row no-gutters>
-            <v-col>
+        <v-col cols="8" class="d-none d-lg-block">
+          <v-row no-gutters justify="center">
+            <v-col cols="4" md="4" class="text-center" xs="4" style="">
               <v-row>
-              <i class="material-icons">
-                phone
-              </i>
-              <h4>+6221 4614 889</h4>
+                <v-col>
+                  <v-icon>
+                    phone
+                  </v-icon>
+              +6221 4614 889
+              </v-col>
               </v-row>
             </v-col>
-            <v-col style="font-weight:bold;">
+            <v-col cols="4" md="4" xs="4" style="font-weight:bold; " class="text-center" >
               <v-row >
-                <v-icon>email</v-icon>
-                support@paroha.id
+                <v-col>
+                  <v-icon>email</v-icon>
+                  support@paroha.id
+                </v-col>
               </v-row>
             </v-col>
-            <v-col style="font-weight:bold;">
+            <v-col class="text-center" cols="4" md="4" xs="4" style="font-weight:bold; ">
               <v-row >
-                <v-icon>access_time</v-icon>
-                Senin - Jumat : 09.00 sd 18.00 WIB
+                <v-col>
+                  <v-icon>access_time</v-icon>
+                  Senin - Jumat : 09.00 sd 18.00 WIB
+                </v-col>
               </v-row>
             </v-col>
           </v-row>
-          <hr class="mt-7">
-          <v-row>
-            <v-col>
+          <hr class="mt-7 ml-12">
+          <v-row no-gutters justify="center">
+            <v-col class="text-center">
               <v-btn text color="primary" @click="home">HOME</v-btn>
             </v-col>
-            <v-col>
+            <v-col class="text-center">
               <v-btn text color="primary" @click="us=!us">TENTANG KAMI</v-btn>
               <v-expansion-panels v-show="us">
                 <v-expansion-panel justify="center">
@@ -47,16 +53,16 @@
                 </v-expansion-panel>
               </v-expansion-panels>
             </v-col>
-            <v-col>
+            <v-col class="text-center">
               <v-btn text color="primary" ><a href="/#produk" title="">PRODUK & JASA</a></v-btn>
             </v-col>
-            <v-col>
+            <v-col class="text-center">
               <v-btn text color="primary">REKANAN</v-btn>
             </v-col>
-            <v-col>
+            <v-col class="text-center">
               <v-btn text color="primary" @click="berita">BERITA</v-btn>
             </v-col>
-            <v-col>
+            <v-col class="text-center">
               <v-btn text color="primary" @click="contact">KONTAK</v-btn>
             </v-col>
           </v-row>
