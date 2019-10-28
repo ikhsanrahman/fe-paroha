@@ -175,7 +175,7 @@
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',
             add: '<span style="opacity:0;">This sentence is invisible</span> <span style="opacity:0;">This sentence is invisible</span>',
-            url: require('../assets/Hardinal.jpg'),
+            url: require('../assets/Tiar.jpeg'),
             name: 'Tiar Pandapotan Purba, S.T, IAP'
           }
 
