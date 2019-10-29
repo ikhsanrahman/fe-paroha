@@ -27,7 +27,7 @@
               src="../assets/Tallo.jpg"
               alt="tallo">
           </v-avatar>
-          <h3 class="text-center mt-12">Armandus Jong Tallo</h3>
+          <h3 class="text-center mt-12">Amandus Jong Tallo</h3>
           <br>
           <hr class="mx-6">
           <br>
@@ -75,9 +75,9 @@
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
       </v-row>
-      <v-row class="my-12 text-justify" >
+      <v-row class="my-12 text-justify" justify="center">
       	<v-col v-for="data in team" :key="data.id">     
-	        <v-card style="height:100%" elevation="10" data-aos="fade-up">
+	        <v-card max-width="400" style="height:100%" elevation="10" data-aos="fade-up">
 	          <v-card-text style="font-weight:bold">
 	            <div>
 	              {{data.text}} <span style="opacity:0;">{{data.add}}</span>
@@ -168,13 +168,13 @@
           },
           {
             text: 'Magister di Bidang Manajemen dan Ekonomi Bisnis di Universitas Gajah Mada , kelahiran bulan Juni tahun 1966 ini terjun kelapangan sudah lebih dari 28 tahun. Bidang keahlian Project Engineering dan sebagai Penilai Publik pada tahun 2018.',
-            add: '<span style="opacity:0;">This sentence is invisible</span>',
+            add: '<span style="opacity:0;">This sentence is invisible wewe</span>',
             url: require('../assets/Hardinal.jpg'),
-            name: 'Hardinal S.T.,MM.,M.Ec.Dev'
+            name: 'Hardinal S.T.,MM.,M.Ec'
           },
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',
-            add: '<span style="opacity:0;">This sentence is invisible</span> <span style="opacity:0;">This sentence is invisible</span>',
+            add: '<span style="opacity:0;">This wewew sentence is invisible</span>',
             url: require('../assets/Tiar.jpeg'),
             name: 'Tiar Pandapotan Purba, S.T, IAP'
           }
