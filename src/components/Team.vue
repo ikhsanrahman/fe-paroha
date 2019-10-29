@@ -168,7 +168,7 @@
           },
           {
             text: 'Magister di Bidang Manajemen dan Ekonomi Bisnis di Universitas Gajah Mada , kelahiran bulan Juni tahun 1966 ini terjun kelapangan sudah lebih dari 28 tahun. Bidang keahlian Project Engineering dan sebagai Penilai Publik pada tahun 2018.',
-            // add: '<span style="opacity:0;">This sentence is invisible</span> <span style="opacity:0;">This sentence is invisible</span>',
+            add: '<span style="opacity:0;">This sentence is invisible</span>',
             url: require('../assets/Hardinal.jpg'),
             name: 'Hardinal S.T.,MM.,M.Ec.Dev'
           },
