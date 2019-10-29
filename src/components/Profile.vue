@@ -33,7 +33,7 @@
           </p>
           <br>
           <p>
-            PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Sejak bulan Juni 2019, badan usaha yang di kembangkan pengembangan pertanian dan pedesaan, jasa studi, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus
+            PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Mulai bulan Juni 2019, badan usaha yang mengembangkan pertanian dan pedesaan, studi studio, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus.
           </p>
         </v-col>
       </v-row>

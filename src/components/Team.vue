@@ -34,7 +34,7 @@
           <h2>Wakil Direktur Utama</h2>
           <br>
           <p class="text-justify mx-6">
-            <b>AMANDUS JONG TALLO</b> Magister Perencaan Kota dan Daerah di Universitas Gajah Mada. Ahli dalam bidang Pemetaan di <b>BAPPENAS</b>, beliau juga aktif sebagai pengajar di Universitas Podomoro. Kesibukan sebagai presenter di IndoTV program Kim Talk.
+            <b>AMANDUS JONG TALLO</b> Magister Perencaan Kota dan Daerah di Universitas Gajah Mada. Ahli dalam bidang Pemetaan lebih dari 10 tahun, Dosen Perencanaan wilayah dan kota pada beberapa universitas swasta di indonesia. Beliau adalah tim ahli pemetaan utilitas di DKI Jakarta dan aktif sebagai Presenter KIM Talk (Hi Indo TV).
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
@@ -50,7 +50,7 @@
           <h2>Direktur Keuangan</h2>
           <br>
           <p class="text-justify mx-6">
-            <b>PANUTURI L. TOBING</b> Magister di Universitas Gajah Mada Jurusan Ekonomi Pembangunan. Sebagai Pencetus Pendirian <b>PT PAROHA TOPAZ SEJAHTERA</b> beliau menjabat sebagai Pimpinan dari KJPP PUNG’S Zulkarnain dan Rekan cabang Jakarta 1. Beliau juga aktif sebagai Ketua Bidang Pendidikan dan Wakil Sekretaris Jenderal di <b>Asosiasi Masyarakat Profesi Penilai Indonesia (MAPPI)</b>. Aktif sebagai CSA di <b>Badan Nasional Standarisasi Profesi Lembaga Sertifikasi Profesi (LSPPM) Pasar Modal dan Asosiasi Analis Efek Indonesia (AAEI)</b>, dan tenaga pengajar dalam bidang Penilaian yang digelutinya.
+            <b>PANUTURI L. TOBING</b> Magister di Universitas Gajah Mada Jurusan Ekonomi Pembangunan Fakultas Ekonomi dan Bisnis. Sebagai Pencetus Pendirian <b>PT PAROHA TOPAZ SEJAHTERA</b> beliau menjabat sebagai Pimpinan dari KJPP PUNG’S Zulkarnain dan Rekan cabang Jakarta 1. Beliau juga aktif sebagai Ketua Bidang Pendidikan dan Wakil Sekretaris Jenderal di <b>Asosiasi Masyarakat Profesi Penilai Indonesia (MAPPI)</b>. Aktif di Asosiasi Analisis Efek Indonesia (AAEI) sebagai Certified Securities Analyst (CSA) dan juga sebagai Asesor (bersertifikat BNSP) di LSP Profesi Pasar Modal dan tenaga pengajar dalam bidang penilaian yang di gelutinya.
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
@@ -66,7 +66,7 @@
           <h2>Direktur Operasional</h2>
           <br>
           <p class=" text-justify mx-6">
-            <b>ROBINTANG TUA SIMARMATA</b> Magister di Universitas Tama Jagakarsa Jurusan Manajemen Proyek. Partner Pendiri <b>PT PAROHA TOPAZ SEJAHTERA</b> ini paham mengenai operasional yang dibutuhkan dalam usaha. Lama bekerja dalam bidang Penjualan di Perbankan dan Penilai di Kantor Jasa Penilai Publik di PUNG’S ZULKARNAIN dan REKAN cabang Jakarta 1. Beliau dikenal sebagai partner yang murah senyum dan mengayomi karyawan dan rekan rekannya.
+            <b>ROBINTANG TUA SIMARMATA</b> Magister di Universitas Tama Jagakarsa Jurusan Manajemen Proyek. Partner Pendiri <b>PT PAROHA TOPAZ SEJAHTERA</b> ini paham mengenai operasional yang dibutuhkan dalam usaha dalam usaha yang akan dibangunnya.
           </p>
         </v-col>
       </v-row>
@@ -161,16 +161,16 @@
             name: 'M Aksan Muzakir S.T.'
           },
           {
-            text: 'Dera Saraswati S Tehnik, merupakan profesional tim kami yang mendalami bidang penilaian dan pemetaan dengan simulasi pada gambar, sangat menyukai matematika dan berharap menjadi tenaga ahli handal dan dipercaya oleh perusahaan.',
+            text: 'Mendalami bidang Penilaian dan Pemetaan dengan simulasi pada gambar, saat ini sedang mendalami jenjang pendidikan Teknik Sipil. Sangat menyukai matematika ini berharap dapat menjadi Tenaga Ahli yang handal dan dipercaya oleh perusahaan.',
             add: '<span style="opacity:0;">This sentence is invisible</span>',
             url: require('../assets/Dera.jpg'),
             name: 'Dera Saraswati S.T'
           },
           {
-            text: 'Magister di bidang manajemen dan ekonomi bisnis di UGM, kelahiran tahun 1966 ini terjun ke lapangan sudah lebih dari 28 tahun. Bidang keahlian project engineering dan sebagai penilai publik pada tahun 2018.',
+            text: 'Magister di Bidang Manajemen dan Ekonomi Bisnis di Universitas Gajah Mada , kelahiran bulan Juni tahun 1966 ini terjun kelapangan sudah lebih dari 28 tahun. Bidang keahlian Project Engineering dan sebagai Penilai Publik pada tahun 2018.',
             add: '<span style="opacity:0;">This sentence is invisible</span> <span style="opacity:0;">This sentence is invisible</span>',
             url: require('../assets/Hardinal.jpg'),
-            name: 'Prof.Dr.Hardinal M.Sc'
+            name: 'Hardinal S.T.,MM.,M.Ec.Dev'
           },
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',
