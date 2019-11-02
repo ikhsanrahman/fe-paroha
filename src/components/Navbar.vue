@@ -24,7 +24,7 @@
               <v-row >
                 <v-col>
                   <v-icon>email</v-icon>
-                  support@paroha.id
+                  topazconsulting@parohatopaz.id
                 </v-col>
               </v-row>
             </v-col>
