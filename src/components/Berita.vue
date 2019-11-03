@@ -20,6 +20,9 @@
 				<v-col cols="12" md="6" sm="6">
 					
 				</v-col>
+				<v-col cols="12" style="height:700px">
+					
+				</v-col>
 			</v-row>
 		</v-container>
 	</div>	

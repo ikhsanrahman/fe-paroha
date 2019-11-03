@@ -77,7 +77,7 @@
       </v-row>
       <v-row class="my-12 text-justify" justify="center">
       	<v-col v-for="data in team" :key="data.id">     
-	        <v-card max-width="400" style="height:100%" elevation="10" data-aos="fade-up">
+	        <v-card max-width="360" style="height:100%" elevation="10" data-aos="fade-up">
 	          <v-card-text style="font-weight:bold">
 	            <div>
 	              {{data.text}} <span style="opacity:0;">{{data.add}}</span>
