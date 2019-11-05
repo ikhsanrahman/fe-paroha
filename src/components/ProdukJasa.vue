@@ -25,20 +25,21 @@
           <v-card-text class="text--primary">
             <div>{{content.description1}}</div>
             <div class="mt-4">{{content.description2}}</div>
-            <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
+            <!-- <div v-for="add in content.point" :key="add.id" class="mt-4 ml-2">
               <v-row>
                 <i class="material-icons">
                 add
                 </i>
                 <h4>{{add}}</h4>
               </v-row>
-            </div>
-          </v-card-text>
-          <v-btn class="float-right align-self-end"
+            </div> -->
+            <v-btn class="float-right align-self-end"
             color="orange"
             text>
             Detail...
           </v-btn>
+          </v-card-text>
+          
         </v-card>
       </v-row>
     </v-container>

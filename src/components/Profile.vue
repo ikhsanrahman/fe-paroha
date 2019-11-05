@@ -14,13 +14,13 @@
         </v-col>
       </v-row>
       <br>
-      <v-row no-gutters justify="center">
+      <v-row no-gutters justify="center" class="mb-n12 mt-12">
         <v-col style="margin-left:10%" cols="10" md="4">
-          <img src="@/assets/Tambun.jpg" height="90%" width="90%" alt=""> 
+          <img src="@/assets/Tambun.jpg" height="60%" width="80%" alt=""> 
         </v-col>
         <v-col cols="10" md="6" id="sejarah" class="text-justify">
           <h1>SEJARAH</h1>
-          <h3 style="color:red">
+          <h3 style="color:red" class="mt-8">
             Kami fokus bergerak dalam bidang jasa konsultasi dengan mengikuti kebutuhan banyaknya perusahaan dengan tenaga ahli yang diminati
           </h3>
           <br>
@@ -33,21 +33,25 @@
           </p>
           <br>
           <p>
-            PT Paroha Topaz Sejahtera memperoleh izin dengan KADIN dan INKINDO. Mulai bulan Juni 2019, badan usaha yang mengembangkan pertanian dan pedesaan, studi studio, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus.
+            <b>PT Paroha Topaz Sejahtera</b> memperoleh izin dengan <b>KADIN</b> dan <b>INKINDO</b>. Mulai bulan Juni 2019, badan usaha yang mengembangkan pertanian dan pedesaan, studi studio, penelitian dan bantuan teknik, keuangan, konsultasi manajemen maupun jasa khusus.
           </p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi text-justify" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <v-col>
-          <h2>VISI</h2>
+      <v-row class="visi text-justify mt-n12" id="visiMisi" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <v-col class="mt-n12">
+          <h2 >VISI</h2>
           <p>Menjadi Perusahaan nasional yang kompetitif, andal dan terpercaya di bidang pemetaan, inspeksi, sertifikasi, konsultasi dan pelatihan</p>
+          <p>Mewujudkan Lembaga Pelatihan sebagai wahana pendidikan yang memberikan layanan pelatihan kepada masyarakat untuk meningkatkan pengetahuan, ketrampilan, dan sikap yang dapat bermanfaat untuk mengembangkan potensi diri dalam bekerja, ataupun meningkatkan kemampuan kewirausahaan.</p>
         </v-col>
       </v-row>
-      <v-row class="visi-misi text-justify" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <v-row class="misi text-justify" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <v-col>
           <h2>MISI</h2>
           <p>
             Menciptakan Nilai Ekonomi kepada para pemangku kepentingan, terutama pelanggan melalui layanan jasa inspeksi, pemetaan, sertifikasi, konsultasi serta jasa terkait lainnya untuk menjamin kepastian berusaha
+          </p>
+          <p>
+            untuk meningkatkan ketersediaan pendidikan dan perluasan akses pelatihan yang merata, terjangkau untuk seluruh lapisan masyarakat di bidangnya, mewujudkan kualitas/mutu dan relevansi pelatihan yang unggul bekerjasama dengan profesional dan lembaga terkait serta meningkatkan potensi sumber daya manusia yang produktif berkarakter, memiliki daya saing dan kreatif dibidangnya.
           </p>
         </v-col>
       </v-row>
@@ -76,9 +80,13 @@
 	.profile {
 		height: 100%;
 	}
-	.visi-misi {
+	.visi {
 		margin-left: 10%;
+    margin-top: 200px;
 	}
+  .misi {
+    margin-left: 10%;
+  }
 	.sejarah {
 		margin-left: 5%;
 	}

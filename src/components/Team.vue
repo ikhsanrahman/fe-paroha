@@ -6,9 +6,9 @@
       </v-row>
       <v-row no-gutters class="my-12" data-aos="fade-up">
         <v-col cols="12" md="3" xs="3" class="text-center my-6 ">
-          <v-avatar width="250" height="270">
+          <v-avatar width="250" height="250">
             <img
-              src="@/assets/Tambun.jpg"
+              src="@/assets/hendra.jpg"
               alt="Tambun">
           </v-avatar>
           <h3 class="text-center mt-12">Hendra Irwanto Tambun</h3>
@@ -22,7 +22,7 @@
           </p>          
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
+          <v-avatar width="250" height="250">
             <img
               src="../assets/Tallo.jpg"
               alt="tallo">
@@ -38,7 +38,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
+          <v-avatar width="250" height="250">
             <img
               src="../assets/tobing.jpg"
               alt="tobing">
@@ -54,9 +54,9 @@
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="270">
+          <v-avatar width="250" height="250">
             <img
-              src="../assets/Robintang.jpg"
+              src="../assets/robinta.jpg"
               alt="John">
           </v-avatar>
           <h3 class="text-center mt-12">Robintang Tua Simarmata</h3>
@@ -156,25 +156,25 @@
         ],
 				team: [
           {
-            text: 'Muhammad Aksan Muzakir merupakan lulusan ITB jurusan tehnik geofisika, berpengalaman dalam bidang geo-physical acquisition and processing services gaps. Mampu menulusuri perhitungan yang berada dalam dasar bumi dengan jaringan, pipa ataupun kadar kedalaman air yang dibutuhkan oleh perusahaan.',
+            text: 'Merupakan ahli geofisika dari Institut Teknologi Bandung. Berpengalaman dalam mengerjakan berbagai macam project survey Geofisika seperti Georadar, Geolistrik, Seismik, CSAMT, Gravity dan Magnetik untuk mencitrakan bawah permukaan. Beberapa kasus project yang pernah dikerjakan antara lain: Pemetaan utilitas bawah permukaan, investigasi stratigrafi dan struktur geologi, investigasi kedalaman pile, serta eksplorasi air tanah dan mineral.',
             url: require('../assets/Aksan.jpg'),
             name: 'M Aksan Muzakir S.T.'
           },
           {
             text: 'Mendalami bidang Penilaian dan Pemetaan dengan simulasi pada gambar, saat ini sedang mendalami jenjang pendidikan Teknik Sipil. Sangat menyukai matematika ini berharap dapat menjadi Tenaga Ahli yang handal dan dipercaya oleh perusahaan.',
-            add: '<span style="opacity:0;">This sentence is invisible</span>',
+            add: '<span style="opacity:0;">This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible</span>',
             url: require('../assets/Dera.jpg'),
             name: 'Dera Saraswati S.T'
           },
           {
-            text: 'Magister di Bidang Manajemen dan Ekonomi Bisnis di Universitas Gajah Mada , kelahiran bulan Juni tahun 1966 ini terjun kelapangan sudah lebih dari 28 tahun. Bidang keahlian Project Engineering dan sebagai Penilai Publik pada tahun 2018.',
-            add: '<span style="opacity:0;">This sentence is invisible wewe</span>',
+            text: 'Magister Keuangan Bisnis dan Master Ekonomi dari Gajah Mada Universitas serta Jurusan Teknik Mesin dari Institut Teknologi Bandung. Beliau sebagai Penilai Publik berijin tahun 2018 dengan pengalaman selama lebih dari 25 tahun.',
+            add: '<span style="opacity:0;">This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible</span>',
             url: require('../assets/Hardinal.jpg'),
-            name: 'Hardinal S.T.,MM.,M.Ec'
+            name: 'Ir. Hardinal S.T.,MM.,M.Ec'
           },
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',
-            add: '<span style="opacity:0;">This wewew sentence is invisible</span>',
+            add: '<span style="opacity:0;">This wewew sentence is invisible This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible</span>',
             url: require('../assets/Tiar.jpeg'),
             name: 'Tiar Pandapotan Purba, S.T, IAP'
           }
