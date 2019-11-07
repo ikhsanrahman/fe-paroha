@@ -78,7 +78,7 @@
 				</v-col>
 			</v-row>
 		</v-container>
-		<v-container>
+		<!-- <v-container>
 			<v-row >
 				<v-col class="text-center" cols="4" md="1" sm="4" xs="4" elevation="80">
 					<v-btn fab large color="white">
@@ -96,7 +96,7 @@
 					</v-btn>
 				</v-col>
 			</v-row>
-		</v-container>		
+		</v-container> -->		
 	</div>	
 </template>
 

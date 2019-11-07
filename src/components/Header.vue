@@ -1,7 +1,13 @@
 <template>
 	<v-container class="header d-flex align-center" fluid>
 		<v-row class="ml-12">
-			<v-col cols="12" style="font-size:25px">
+			<v-col cols="12" style="font-size:25px" class="d-none d-lg-block">
+				<h1>Jasa <span style="color:red">Konsultasi</span> </h1>
+				<h2>dengan Tim Profesional</h2>
+				<br>
+				<v-btn color="error"><a href="/#support" title="">Support </a></v-btn>
+			</v-col>
+			<v-col cols="12" style="font-size:15px" class="d-lg-none">
 				<h1>Jasa <span style="color:red">Konsultasi</span> </h1>
 				<h2>dengan Tim Profesional</h2>
 				<br>

@@ -34,7 +34,7 @@
           <h2>Wakil Direktur Utama</h2>
           <br>
           <p class="text-justify mx-6">
-            <b>AMANDUS JONG TALLO</b> Magister Perencaan Kota dan Daerah di Universitas Gajah Mada. Ahli dalam bidang Pemetaan lebih dari 10 tahun, Dosen Perencanaan wilayah dan kota pada beberapa universitas swasta di indonesia. Beliau adalah tim ahli pemetaan utilitas di DKI Jakarta dan aktif sebagai Presenter KIM Talk (Hi Indo TV).
+            <b>AMANDUS JONG TALLO</b> Magister Perencanaan Kota dan Daerah di Universitas Gajah Mada. Ahli dalam bidang Pemetaan lebih dari 10 tahun, Dosen Perencanaan wilayah dan kota pada beberapa universitas swasta di indonesia. Beliau adalah tim ahli pemetaan utilitas di DKI Jakarta dan aktif sebagai Presenter KIM Talk (Hi Indo TV).
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
@@ -76,7 +76,7 @@
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
       </v-row>
       <v-row class="my-12 text-justify" justify="center">
-      	<v-col v-for="data in team" :key="data.id">     
+      	<v-col v-for="data in team" :key="data.id" class="ml-2">     
 	        <v-card max-width="360" style="height:100%" elevation="10" data-aos="fade-up">
 	          <v-card-text style="font-weight:bold">
 	            <div>
@@ -170,7 +170,7 @@
             text: 'Magister Keuangan Bisnis dan Master Ekonomi dari Gajah Mada Universitas serta Jurusan Teknik Mesin dari Institut Teknologi Bandung. Beliau sebagai Penilai Publik berijin tahun 2018 dengan pengalaman selama lebih dari 25 tahun.',
             add: '<span style="opacity:0;">This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible</span>',
             url: require('../assets/Hardinal.jpg'),
-            name: 'Ir. Hardinal S.T.,MM.,M.Ec'
+            name: 'Ir. Hardinal MM.,M.Ec.Dev'
           },
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',

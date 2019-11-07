@@ -1,14 +1,14 @@
 <template>
   <div>
-    <v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99">
-      <v-row>
+    <v-container fluid class="navbar" :class="{'navbar--hidden': !showNavbar}" style="z-index:99; height:15%">
+      <v-row class="mt-n6">
         <v-col cols="4">
           <v-row >
             <img src="@/assets/paroha.png" width="150px" height="100px" alt="">
             <h4 class="mt-10 ml-n4 d-none d-lg-block">PT PAROHA TOPAZ SEJAHTERA</h4>
           </v-row>    
         </v-col>
-        <v-col cols="8" class="d-none d-lg-block">
+        <v-col cols="8" class="d-none d-lg-block mt-2">
           <v-row no-gutters justify="center">
             <v-col cols="4" md="4" class="text-center" xs="4" style="">
               <v-row>
@@ -37,7 +37,7 @@
               </v-row>
             </v-col>
           </v-row>
-          <hr class="mt-7 ml-12">
+          <hr class=" ml-12">
           <v-row no-gutters justify="center">
             <v-col class="text-center">
               <v-btn text color="primary" @click="home">HOME</v-btn>
@@ -69,7 +69,7 @@
         </v-col>
       </v-row>          
     </v-container>        
-    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99" class="pr-4 mt-10">
+    <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99;" class="pr-4 mt-4">
       <v-row justify="end">
         <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">
