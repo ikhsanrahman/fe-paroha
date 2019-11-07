@@ -15,8 +15,11 @@
       </v-row>
       <br>
       <v-row no-gutters justify="center" class="mb-n12 mt-12">
-        <v-col style="margin-left:10%" cols="10" md="4">
+        <v-col style="margin-left:10%" cols="10" md="4" class="d-none d-lg-block">
           <img src="@/assets/hendra.jpg" height="80%" width="80%" alt=""> 
+        </v-col>
+        <v-col style="margin-left:17%" cols="10" class="d-lg-none text-justify" justify="center">
+          <img src="@/assets/hendra.jpg" class="" height="80%" width="80%" alt=""> 
         </v-col>
         <v-col cols="10" md="6" id="sejarah" class="text-justify">
           <h1>SEJARAH</h1>  
