@@ -6,7 +6,7 @@
       </v-row>
       <v-row no-gutters class="my-12" data-aos="fade-up">
         <v-col cols="12" md="3" xs="3" class="text-center my-6 ">
-          <v-avatar width="250" height="250">
+          <v-avatar width="220" height="230">
             <img
               src="@/assets/hendra.jpg"
               alt="Tambun">
@@ -22,7 +22,7 @@
           </p>          
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="250">
+          <v-avatar width="220" height="230">
             <img
               src="../assets/Tallo.jpg"
               alt="tallo">
@@ -38,7 +38,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="250">
+          <v-avatar width="220" height="230">
             <img
               src="../assets/tobing.jpg"
               alt="tobing">
@@ -54,7 +54,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="3" xs="3" class="text-center my-6" data-aos="fade-up">
-          <v-avatar width="250" height="250">
+          <v-avatar width="220" height="230">
             <img
               src="../assets/robinta.jpg"
               alt="John">
@@ -70,14 +70,19 @@
           </p>
         </v-col>
       </v-row>
-      <v-row justify="center">
+      <v-row justify="center" class="d-none d-lg-block text-center">
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
         <i style="font-size:30px;color:blue" data-aos="fade-up" class="fas fa-circle mx-12"></i>
       </v-row>
+      <v-row justify="center" class="d-lg-none">
+        <i style="font-size:15px;color:blue" data-aos="fade-up" class="fas fa-circle mx-6"></i>
+        <i style="font-size:15px;color:blue" data-aos="fade-up" class="fas fa-circle mx-6"></i>
+        <i style="font-size:15px;color:blue" data-aos="fade-up" class="fas fa-circle mx-6"></i>
+      </v-row>
       <v-row class="my-12 text-justify" justify="center">
-      	<v-col v-for="data in team" :key="data.id" class="ml-2">     
-	        <v-card max-width="360" style="height:100%" elevation="10" data-aos="fade-up">
+      	<!-- <v-col class="" v-for="data in team" :key="data.id" >      -->
+	        <v-card max-width="360" class="mx-4 my-4" style="height:100%" elevation="10" v-for="data in team" :key="data.id" data-aos="fade-up">
 	          <v-card-text style="font-weight:bold">
 	            <div>
 	              {{data.text}} <span style="opacity:0;">{{data.add}}</span>
@@ -92,12 +97,12 @@
 	                  alt="">
 	              </v-avatar>
                 <v-col class="ml-12 mt-n6" cols="12">
-  	              <div class="ml-10 mt-n4" style="font-weight:bold;">{{data.name}} </div>
+  	              <div class="ml-8 mt-n4" style="font-weight:bold;">{{data.name}} </div>
 	              </v-col>
               </v-row>
 	          </div>
 	        </v-card>
-        </v-col>
+        <!-- </v-col> -->
       	<!-- <v-carousel>
 			    <v-carousel-item
 			      v-for="(item, i) in process(team.length)"
@@ -170,7 +175,7 @@
             text: 'Magister Keuangan Bisnis dan Master Ekonomi dari Gajah Mada Universitas serta Jurusan Teknik Mesin dari Institut Teknologi Bandung. Beliau sebagai Penilai Publik berijin tahun 2018 dengan pengalaman selama lebih dari 25 tahun.',
             add: '<span style="opacity:0;">This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible, This sentence is invisible</span>',
             url: require('../assets/Hardinal.jpg'),
-            name: 'Ir. Hardinal MM.,M.Ec.Dev'
+            name: 'Ir. Hardinal MM.,M.Ec. Dev'
           },
           {
             text: 'Teknik Perencanaan Wilayah dan Kota, Institut Teknologi Indonesia Serpong, Banten beliau adalah ahli Perencanaan Wilayah dan Kota Madya, Ikatan Ahli Perencanaan Indonesia (IAP DKI 31-41077, IAP Banten)',

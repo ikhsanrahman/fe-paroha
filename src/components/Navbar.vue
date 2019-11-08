@@ -74,7 +74,7 @@
         <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
         <v-expansion-panels class="d-lg-none" v-show="show">
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions @click="home">HOME</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="home">Home</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
             <v-expansion-panel-header>Tentang Kami</v-expansion-panel-header>
@@ -86,16 +86,16 @@
               </v-expansion-panel-content>
            </v-expansion-panel>
            <v-expansion-panel>
-            <v-expansion-panel-header hide-actions><a href="/#produk" title="">PRODUK & JASA</a></v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions><a href="/#produk" title="">Produk & Jasa</a></v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions @click="rekanan">REKANAN</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="rekanan">Rekanan</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions @click="berita">BERITA</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="berita">Berita</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions @click="contact">KONTAK</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions @click="contact">Kontak</v-expansion-panel-header>
           </v-expansion-panel>
         </v-expansion-panels>  
       </v-row>
