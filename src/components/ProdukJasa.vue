@@ -6,7 +6,7 @@
       </v-row>
       <v-row justify="center">
         <v-card
-          class="mx-10 mt-6 mb-8 text-justify"
+          class="mx-10 mt-4 mb-6 text-justify"
           width="500"
           height="auto"
           v-for="content in data"
@@ -20,12 +20,15 @@
             :src="content.url">
           </v-img>
           <br>
-          <v-card-subtitle style="font-weight:bold;width:40px">
-            <p class="mt-6 mx-4">{{content.title}}</p></v-card-subtitle>
+          <v-card-subtitle  style="font-weight:bold;width:40px">
+            <p class="mt-0 mx-4">{{content.title}}</p></v-card-subtitle>
 
-          <v-card-text class="text--primary" style="font-size:90%">
+          <v-card-text class="text--primary mb-12" style="font-size:90%">
             <div>{{content.description1}}</div>
-            <div class="mt-2 mb-12">{{content.description2}}</div>
+            <br>
+            <div class="">{{content.description2}}</div>
+            <br>
+            <br>
           </v-card-text>
           <!-- <v-btn class="float-right"
             color="orange"
