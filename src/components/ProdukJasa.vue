@@ -26,7 +26,7 @@
           <v-card-text class="text--primary mb-12" style="font-size:90%">
             <div>{{content.description1}}</div>
             <br>
-            <div class="">{{content.description2}}</div>
+            <div class="mt-2 mb-12">{{content.description2}}</div>
             <br>
             <br>
           </v-card-text>
