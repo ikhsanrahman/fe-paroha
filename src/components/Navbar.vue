@@ -43,7 +43,7 @@
               <v-btn text color="primary" @click="home">HOME</v-btn>
             </v-col>
             <v-col class="text-center">
-              <v-btn text color="primary" @click="us=!us">TENTANG KAM</v-btn>
+              <v-btn text color="primary" @click="us=!us">TENTANG KAMI</v-btn>
               <v-expansion-panels v-show="us">
                 <v-expansion-panel justify="center">
                   <v-expansion-panel-header hide-actions ><a href="/#sejarah" @click="us=false" style="color:black" title="">Sejarah</a></v-expansion-panel-header>
@@ -68,7 +68,8 @@
           </v-row>
         </v-col>
       </v-row>          
-    </v-container>        
+    </v-container>
+    <!-- this section for mobile   -->
     <v-container fluid :class="{'navbar-hidden': !showNavbar}" style="position:fixed;z-index:99;" class="pr-4 mt-4">
       <v-row justify="end">
         <v-app-bar-nav-icon :class="{'navbar-hidden': !showNavbar}" class="d-lg-none blue" @click="show=!show"></v-app-bar-nav-icon>
