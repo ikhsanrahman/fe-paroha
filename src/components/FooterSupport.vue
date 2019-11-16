@@ -67,7 +67,7 @@
 						</v-col>
 						<v-col>
 							<p>+6221-4614889</p>
-							<p>+62822-13364777</p>
+							<!-- <p>+62822-13364777</p> -->
 							<br>
 							<p>topazconsulting@parohatopaz.id</p>
 							<p>support@parohatopaz.id</p>

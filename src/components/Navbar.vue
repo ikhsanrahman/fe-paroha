@@ -60,7 +60,7 @@
               <v-btn text color="primary" @click="rekanan">REKANAN</v-btn>
             </v-col>
             <v-col class="text-center">
-              <v-btn text color="primary" @click="berita">BERITA</v-btn>
+              <v-btn text color="primary"><a href="https://blog.parohatopaz.id" title="">BERITA</a></v-btn>
             </v-col>
             <v-col class="text-center">
               <v-btn text color="primary" @click="contact">KONTAK</v-btn>
@@ -93,7 +93,7 @@
             <v-expansion-panel-header hide-actions @click="rekanan">Rekanan</v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header hide-actions @click="berita">Berita</v-expansion-panel-header>
+            <v-expansion-panel-header hide-actions><a href="https://blog.parohatopaz.id/" title="">Berita</a></v-expansion-panel-header>
           </v-expansion-panel>
           <v-expansion-panel>
             <v-expansion-panel-header hide-actions @click="contact">Kontak</v-expansion-panel-header>
